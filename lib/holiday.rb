@@ -60,7 +60,12 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-holiday_hash.each {|key, value}
+holiday_hash.each {|key, value|
+  puts "#{key.to_s}:"
+  value.each {|holiday, supplyArary|
+    puts "\t#{holiday}: #{supplyArary.join(", ")}"
+  }
+}
 end
 
 def all_holidays_with_bbq(holiday_hash)

@@ -80,6 +80,7 @@ def all_holidays_with_bbq(holiday_hash)
     holidayHash.each { |holiday, supplyArray|
       if supplyArray.include("BBQ")
         returnArray << holiday
+      end
     }
   }
   returnArray

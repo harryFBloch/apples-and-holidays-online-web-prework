@@ -66,7 +66,7 @@ holidayString[0] = holidayString.capitalize[0]
   puts "#{holidayString}:"
   value.each {|holiday, supplyArary|
     string = holiday.to_s
-    string = string.split("_").map(&:capitalize)join(" ")
+    string = string.split("_").map(&:capitalize).join(" ")
     puts "  #{string}: #{supplyArary.join(", ")}"
   }
 }

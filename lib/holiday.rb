@@ -65,7 +65,7 @@ holidayString = key.to_s
 holidayString[0] = holidayString.capitalize[0]
   puts "#{holidayString}:"
   value.each {|holiday, supplyArary|
-    puts "\t#{holiday}: #{supplyArary.join(", ")}"
+    puts "  #{holiday}: #{supplyArary.join(", ")}"
   }
 }
 end

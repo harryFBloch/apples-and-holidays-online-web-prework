@@ -62,10 +62,12 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 holiday_hash.each {|key, value|
 holidayString = key.to_s
-holidayString[0] = holidayString.capitalize[0]
+holidayString = holidayString.capitalize[0]
   puts "#{holidayString}:"
   value.each {|holiday, supplyArary|
-    puts "  #{holiday}: #{supplyArary.join(", ")}"
+    string = holiday.to_s
+    string = string.capitalize[0]
+    puts "  #{string}: #{supplyArary.join(", ")}"
   }
 }
 end
